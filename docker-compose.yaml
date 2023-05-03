@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  express:
+    image: ghcr.io/mve/watchtower-cd:main
+    environment:
+      - PORT=${PORT}
+    restart: always
+    ports:
+      - "3000:3000"
